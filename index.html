@@ -457,11 +457,31 @@
             </li>
           </ul>
         </div>
+        <div class="mailing">
+          <b class="mailing-heading">Подпишитесь на рассылку</b>
+          <form action="#" class="footer-form">
+            <input
+              type="email"
+              id="email"
+              class="mailing-input"
+              name="input-email"
+              placeholder="E-mail"
+            />
+            <button class="mailing-btn" type="submit">
+              Подписаться
+              <span class="mailing-wrap">
+                <svg class="icon-send" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="18" height="18">
@@ -497,10 +517,31 @@
               </svg>
             </span>
           </div>
+          <div class="modal-form-field">
+            <label for="comment" class="modal-lable">Комментарий</label>
+            <textarea
+              name="modal-comments"
+              id="comment"
+              class="modal-comments"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-check-field">
+            <input type="checkbox" id="check" name="policy" class="visually-hidden checkbox" />
+            <label for="check" class="check-label"
+              ><span class="icon-check">
+                <svg class="modal-check-icon" width="11" height="8">
+                  <use href="./images/sprite.svg#icon-vector"></use>
+                </svg> </span
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="modal-link" href="">Условия договора</a></label
+            >
+          </div>
+          <button class="check-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
