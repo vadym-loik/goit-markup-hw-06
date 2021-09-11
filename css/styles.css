@@ -255,6 +255,7 @@ img {
   color: var(--primary-white-color);
   border-radius: 4px;
   border: hidden;
+  cursor: pointer;
 }
 
 /* ------------------main--------------------- */
